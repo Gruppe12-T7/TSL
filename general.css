@@ -5,6 +5,97 @@
 }
 
 /*** mobil-version ***/
+/* header/menu */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #233249;
+  margin-bottom: 30px;
+}
+
+.logo {
+  background-color: rgb(255, 255, 255); /* Baggrundsfarve for hele logo-containeren */
+  padding: 5px 10px 5px 10px; /* Fjern padding fra venstre side */
+}
+
+.logo img {
+  width: 125px;
+  display: block;
+}
+
+.logo a {
+  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
+}
+
+.logo a:hover {
+  opacity: 0.8;
+}
+
+/* Menu styling */
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-right: 150px;
+}
+
+nav ul.menu li {
+  margin: 0 25px;
+}
+
+nav ul.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Burger menu styling */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.burger .line {
+  width: 25px;
+  height: 1.5px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  nav ul.menu {
+    display: none; /* Skjuler menuen på mobile enheder */
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+  }
+
+  nav ul.menu li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .burger {
+    display: flex; /* Viser burgermenuen på mobil */
+  }
+
+  .menu.active {
+    display: flex; /* Viser menuen når burgerikonet klikkes */
+  }
+
+  .logo img {
+    width: 100px;
+  }
+}
 
 /*** footer ***/
 footer {
