@@ -1,5 +1,29 @@
-* {
+@font-face {
+  font-family: h3;
+  src: url(fonts/HelveticaNeueBold.otf);
+}
+
+body {
   box-sizing: border-box;
-  margin: 0;
+  margin: 1rem;
   padding: 0;
 }
+
+.grid_produktliste{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.produktlisteimg{
+  width: 200px;
+  height: auto;
+}
+
+.produktlsitenavn{
+  font-family: h3;
+  color: rgb(35, 50, 73);
+}
+
+/* .produktliste_box{
+
+} */
