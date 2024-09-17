@@ -24,8 +24,22 @@
         </template>
       </section>
       <section>
-        <h2>Måske mangler du også?</h2>
-        <template> </template>
+        <h2>Har du nogle spørgsmål?</h2>
+        <form action="submit_inquiry.php" method="post">
+          <label for="name">Full Name:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="subject">Subject:</label><br />
+          <input type="text" id="subject" name="subject" /><br /><br />
+
+          <label for="message">Your Inquiry:</label><br />
+          <textarea id="message" name="message" rows="5" cols="30" required></textarea><br /><br />
+
+          <input type="submit" value="Submit" />
+        </form>
       </section>
     </main>
     <footer>
