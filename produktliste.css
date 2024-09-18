@@ -16,20 +16,26 @@ body {
 
 h2{
   font-family: bold;
-  margin-left: 2rem;
+  margin-left: 0rem;
+  margin-bottom: 1rem;
   color: rgb(35, 50, 73);
+  font-size: 25px;
 }
 
 .grid_produktliste{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .produktlisteimg{
-  width: 200px;
+  width: 150px;
   height: auto;
   margin: 10px;
+  
 }
 
 .produktlsitenavn{
@@ -42,8 +48,18 @@ h2{
   cursor: pointer;
   box-shadow:2px 2px 5px 0px;
   color: rgb(35, 50, 73, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .produktlsitenavn:hover{
   text-transform: uppercase;
+}
+
+/****** media queries til computer format ********/
+@media (min-width: 700px) {
+  .grid_produktliste{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
