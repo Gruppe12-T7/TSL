@@ -59,4 +59,5 @@ h2{
   .grid_produktliste{
     grid-template-columns: 1fr 1fr 1fr;
   }
+
 }
