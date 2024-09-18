@@ -6,9 +6,11 @@ const urlParams = new URLSearchParams(window.location.search);
 
 const selectedCategory = urlParams.get("category");
 
-if(selectedCategory)
+// const selectedCategory = "Audio/Photo/Video Equipment"
+
+
 fetch(
-    `https://crfdkrynbwvauyrnuvmc.supabase.co/rest/v1/TSL?Taksonomi1=eg.${encodeURIComponent(selectedCategory)}`,
+    `https://crfdkrynbwvauyrnuvmc.supabase.co/rest/v1/TSL?Taksonomi1=eq.${selectedCategory}`,
     {
         method: "GET",
         headers: {
@@ -29,7 +31,7 @@ function showProduct(product){
     const template = document.querySelector("#produktTemplate");
     const copy = template.content.cloneNode(true);
     /* copy.querySelector */
-    copy.querySelector(".produktlsitenavn").textContent = product.Produktnavn;
+    copy.querySelector(".produktlsitenavn").textContent = product.Produktnavn_og_model;
     document.querySelector(".grid_produktliste").appendChild(copy);
 }
 
