@@ -48,9 +48,6 @@ h2{
   cursor: pointer;
   box-shadow:2px 2px 5px 0px;
   color: rgb(35, 50, 73, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .produktlsitenavn:hover{
