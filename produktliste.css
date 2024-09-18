@@ -1,29 +1,49 @@
 @font-face {
-  font-family: h3;
+  font-family: bold;
   src: url(fonts/HelveticaNeueBold.otf);
+}
+
+@font-face {
+  font-family: regular;
+  src: url(fonts/HelveticaNeueLight.otf);
 }
 
 body {
   box-sizing: border-box;
-  margin: 1rem;
+  margin: 1em;
   padding: 0;
+}
+
+h2{
+  font-family: bold;
+  margin-left: 2rem;
+  color: rgb(35, 50, 73);
 }
 
 .grid_produktliste{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 .produktlisteimg{
   width: 200px;
   height: auto;
+  margin: 10px;
 }
 
 .produktlsitenavn{
-  font-family: h3;
+  font-family: bold;
   color: rgb(35, 50, 73);
+  text-align: center;
 }
 
-/* .produktliste_box{
+.container_produktliste{
+  cursor: pointer;
+  box-shadow:2px 2px 5px 0px;
+  color: rgb(35, 50, 73, 0.5);
+}
 
-} */
+.produktlsitenavn:hover{
+  text-transform: uppercase;
+}
