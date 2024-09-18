@@ -4,11 +4,12 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 
+//fanger den valgte kategori på index.html
 const selectedCategory = urlParams.get("category");
 
 // const selectedCategory = "Audio/Photo/Video Equipment"
 
-
+//fetcher data
 fetch(
     `https://crfdkrynbwvauyrnuvmc.supabase.co/rest/v1/TSL?Taksonomi1=eq.${selectedCategory}`,
     {
@@ -21,11 +22,13 @@ fetch(
 .then((res)=> res.json())
 .then(showProducts);
 
+//laver et array af de produkter fra den valgte kategori
 function showProducts(products){
     console.log(products);
     products.forEach(showProduct);
 }
 
+//kopierer dem og viser i templaten
 function showProduct(product){
     console.log(product);
     const template = document.querySelector("#produktTemplate");
