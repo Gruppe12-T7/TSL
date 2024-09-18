@@ -71,6 +71,8 @@ article{
     z-index: 2;
     display: grid;
     justify-content: right;
+    font-family: bold;
+    color: black);
   }
 
  .navn:hover{
