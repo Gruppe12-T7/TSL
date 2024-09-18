@@ -4,7 +4,7 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 
-const selectedCategory = param.get(`category`);
+const selectedCategory = urlParams.get("category");
 
 if(selectedCategory)
 fetch(
@@ -26,8 +26,10 @@ function showProducts(products){
 
 function showProduct(product){
     console.log(product);
+    const template = document.querySelector("#produktTemplate");
     const copy = template.content.cloneNode(true);
-    copy.querySelector
-    copy.querySelector
+    /* copy.querySelector */
+    copy.querySelector(".produktlsitenavn").textContent = product.Produktnavn;
+    document.querySelector(".grid_produktliste").appendChild(copy);
 }
 
