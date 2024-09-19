@@ -10,7 +10,7 @@ console.log("cat", selectedCategory);
 
 //fetcher data
 fetch(
-    `https://crfdkrynbwvauyrnuvmc.supabase.co/rest/v1/TSL?Taksonomi1=eq.${selectedCategory}`,
+    `https://crfdkrynbwvauyrnuvmc.supabase.co/rest/v1/TSL?Taksonomi1=eq.${selectedCategory}&limit=15`,
     {
         method: "GET",
         headers: {
