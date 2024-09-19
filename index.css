@@ -17,6 +17,7 @@ body {
 h1{
   font-family: bold;
   color: rgb(35, 50, 73);
+  margin-left: 1rem;
 }
 
 .kategori_container{
