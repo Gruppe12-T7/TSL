@@ -29,10 +29,11 @@ h1{
   margin-bottom: 1rem;
 }
 
-article{
+.pinkbox{
   background-color: rgb(231, 130, 169);
   padding: 5rem;
   z-index: 2;
+  cursor: pointer;
 }
 
 .produkter {
@@ -70,18 +71,28 @@ h2{
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+
+  .pinkbox:hover{
+    background-color: rgb(183, 183, 183);
+  }
   
-  .navn{
+  .pinkbox{
     background-color: rgb(231, 130, 169);
-    padding: 5rem;
+    padding: 1rem;
     z-index: 2;
     font-family: bold;
     color: black;
-
+    width: 300px;
+    justify-content: right;
   }
 
- .navn:hover{
-    background-color: rgb(183, 183, 183);
+  article {
+    width: 200px;
+    height: 200px;
+    display: grid;
+  }
+
+ .pinkbox:hover{
     cursor: pointer;
   }
   
