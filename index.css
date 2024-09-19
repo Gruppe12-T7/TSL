@@ -112,6 +112,7 @@ h2 a{
     overflow: scroll;
     scrollbar-width: thin;
     scrollbar-color: rgb(234, 234, 234, 0.1);
+    overflow-y: hidden;
   }
   
   .grid_produktliste{
