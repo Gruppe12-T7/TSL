@@ -46,12 +46,13 @@ article{
   text-align: center;
 }
 
-
-/****** media queries til computer format ********/
-@media (min-width: 700px) {
 h2{
   font-family: bold;
 }
+
+
+/****** media queries til computer format ********/
+@media (min-width: 700px) {
 
   .kategori_container{
     background-color: rgb(234, 234, 234, 0.1);
@@ -74,10 +75,9 @@ h2{
     background-color: rgb(231, 130, 169);
     padding: 5rem;
     z-index: 2;
-    display: grid;
-    justify-content: right;
     font-family: bold;
     color: black;
+
   }
 
  .navn:hover{
