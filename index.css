@@ -89,6 +89,8 @@ h2{
     display: flex;
     z-index: 1;
     overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(234, 234, 234, 0.1);
   }
   
   .grid_produktliste{
