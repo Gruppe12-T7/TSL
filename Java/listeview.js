@@ -30,6 +30,8 @@ function showProducts(products){
 //kopierer dem og viser i templaten
 function showProduct(product){
     console.log(product);
+
+    document.querySelector("h2").textContent=product.Taksonomi1;
     const template = document.querySelector("#produktTemplate");
     const copy = template.content.cloneNode(true);
 
