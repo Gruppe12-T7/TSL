@@ -1,148 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="produkt.css" />
-    <link rel="stylesheet" href="general.css" />
 
-    <title>Single view</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="produkt.css" />
+  <link rel="stylesheet" href="general.css" />
 
-  <body>
-    <header>
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/logo.svg" alt="logo" />
-        </a>
+  <title>Single view</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.svg" alt="logo" />
+      </a>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="">Studiehåndbog</a></li>
+        <li><a href="">Vejledning og støtte</a></li>
+        <li><a href="">Praktik</a></li>
+        <li><a href="">Internationale muligheder</a></li>
+        <li><a href="">Studieliv og Faciliteter</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="">Studiehåndbog</a></li>
-          <li><a href="">Vejledning og støtte</a></li>
-          <li><a href="">Praktik</a></li>
-          <li><a href="">Internationale muligheder</a></li>
-          <li><a href="">Studieliv og Faciliteter</a></li>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sektion1">
+      <div class="pn_img_i_s">
+        <div class="pn_img">
+          <h1>Produktnavn</h1>
+
+          <img src="img/sdkort.webp" alt="SD kort" />
+        </div>
+
+        <div class="info">
+          <h2>INFO</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+            deleniti in dolore. Magnam blanditiis optio nobis ab ipsum aperiam
+            minus quasi? Asperiores laborum commodi libero velit suscipit?
+            Unde, quibusdam molestiae! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ullam deleniti in dolore.
+          </p>
+        </div>
+        <div class="status">
+          <h3>Ledig/udlånt</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="sektion2">
+      <div class="form_produkt">
+        <h2>Har du nogle spørgsmål?</h2>
+        <form action="submit_inquiry.php" method="post">
+          <label for="name">Navn</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">E-mail</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Besked</label><br />
+          <textarea id="message" name="message" rows="5" cols="30" required></textarea><br /><br />
+
+          <input type="submit" value="Submit" class="submit-button" />
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="grid4">
+      <div>
+        <h3>KEA - Københavns Erhversakademi</h3>
+        <ul>
+          <li>Guldbergsgade 29N</li>
+          <li>2200 København N</li>
         </ul>
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
-    </header>
+        <p class="bold">Du skal ikke bare vide.<br />Du skal kunne.</p>
+        <p>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+        </p>
+        <p>
+          <a href=""></a>
+        </p>
+      </div>
+      <div>
+        <h3>Vejledning</h3>
+        <ul>
+          <li>Studieadministration</li>
+          <li>Studie- og karrierevejledning</li>
+          <li>SPS (specialpædagogisk vejledning)</li>
+          <li>SU-vejledning</li>
+          <li>Praktik</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Relevante links</h3>
+        <ul>
+          <li>KEA Webmail</li>
+          <li>KEA Bibliotek</li>
+          <li>Itslearning</li>
+          <li>Fag- og modulkatalog</li>
+          <li>Studieaktivitetsmodel</li>
+          <li>PARIS-aftalen</li>
+          <li>Ordensregler</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Praktisk info</h3>
+        <ul>
+          <li>Cookies og privatliv</li>
+          <li>Persondatapolitik</li>
+          <li>Tilgængelighedserklæring</li>
+          <li>Find vej på KEA</li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+</body>
+<script src="Java/singleview.js"></script>
 
-    <main>
-      <ol class="breadcrumbs">
-        <li><a href="index.html">Forside</a></li>
-        <li><a href="produktliste.html">Produktliste</a></li>
-        <li><a href="produkt.html">Single view</a></li>
-        <li>Sahara Team India Fanwear Round Neck Jersey</li>
-      </ol>
-      <section class="sektion1">
-        <div class="pn_img_i_s">
-          <div class="pn_img">
-            <h1>Produktnavn</h1>
-
-            <img src="img/sdkort.webp" alt="SD kort" />
-          </div>
-
-          <div class="info">
-            <h2>INFO</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-              deleniti in dolore. Magnam blanditiis optio nobis ab ipsum aperiam
-              minus quasi? Asperiores laborum commodi libero velit suscipit?
-              Unde, quibusdam molestiae! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Ullam deleniti in dolore.
-            </p>
-          </div>
-          <div class="status">
-            <h3>Ledig/udlånt</h3>
-          </div>
-        </div>
-      </section>
-
-      <section class="sektion2">
-        <div class="form_produkt">
-          <h2>Har du nogle spørgsmål?</h2>
-          <form action="submit_inquiry.php" method="post">
-            <label for="name">Navn</label><br />
-            <input type="text" id="name" name="name" required /><br /><br />
-
-            <label for="email">E-mail</label><br />
-            <input type="email" id="email" name="email" required /><br /><br />
-
-            <label for="message">Besked</label><br />
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              cols="30"
-              required
-            ></textarea
-            ><br /><br />
-
-            <input type="submit" value="Submit" class="submit-button" />
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <section class="grid4">
-        <div>
-          <h3>KEA - Københavns Erhversakademi</h3>
-          <ul>
-            <li>Guldbergsgade 29N</li>
-            <li>2200 København N</li>
-          </ul>
-          <p class="bold">Du skal ikke bare vide.<br />Du skal kunne.</p>
-          <p>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-          </p>
-          <p>
-            <a href=""></a>
-          </p>
-        </div>
-        <div>
-          <h3>Vejledning</h3>
-          <ul>
-            <li>Studieadministration</li>
-            <li>Studie- og karrierevejledning</li>
-            <li>SPS (specialpædagogisk vejledning)</li>
-            <li>SU-vejledning</li>
-            <li>Praktik</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Relevante links</h3>
-          <ul>
-            <li>KEA Webmail</li>
-            <li>KEA Bibliotek</li>
-            <li>Itslearning</li>
-            <li>Fag- og modulkatalog</li>
-            <li>Studieaktivitetsmodel</li>
-            <li>PARIS-aftalen</li>
-            <li>Ordensregler</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Praktisk info</h3>
-          <ul>
-            <li>Cookies og privatliv</li>
-            <li>Persondatapolitik</li>
-            <li>Tilgængelighedserklæring</li>
-            <li>Find vej på KEA</li>
-          </ul>
-        </div>
-      </section>
-    </footer>
-  </body>
-  <script src="Java/singleview.js"></script>
 </html>
 
 <!-- <a title="Find vores podcasts på Podbean" href="http://keacph.podbean.com" target="_blank" rel="noopener" onclick="saAutomatedLink(this, 'outbound');"><img style="width: 150px; height: 56px; border: none;" src="//www.podbean.com/images/badges/w600.png" alt="Download app'en til Podbean"></a> -->
