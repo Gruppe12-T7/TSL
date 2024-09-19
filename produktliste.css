@@ -54,6 +54,34 @@ h2{
   text-transform: uppercase;
 }
 
+.breadcrumbs{
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 15px;
+  justify-content: left;
+  padding-bottom: 2rem;
+  margin: auto;
+}
+
+.breadcrumbs a{
+  text-decoration: none;
+  color: black;
+  font-family: regular;
+  font-weight: 600;
+}
+
+.breadcrumbs :hover{
+  color: rgb(71, 70, 70);
+}
+
+
+.breadcrumbs li + li ::before{
+  content: ">";
+  margin-right: 10px;
+  color: black;
+}
+
 /****** media queries til computer format ********/
 @media (min-width: 700px) {
   .grid_produktliste{
