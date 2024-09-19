@@ -1,6 +1,6 @@
-//const urlParams = new URLSearchParams(window.location.search);
+const urlParams = new URLSearchParams(window.location.search);
 
-//const id = urlParams.get(`id`);
+const id = urlParams.get(`id`);
 
 fetch("https://crfdkrynbwvauyrnuvmc.supabase.co/rest/v1/TSL", {
     method: "GET",
@@ -13,7 +13,6 @@ fetch("https://crfdkrynbwvauyrnuvmc.supabase.co/rest/v1/TSL", {
 
 function showData(items){
   console.log(items);
-  //items.forEach()
   //document.querySelector("")
   //document.querySelector("")
   //document.querySelector("")
