@@ -32,7 +32,7 @@ function showProduct(product){
     console.log(product);
     const template = document.querySelector("#produktTemplate");
     const copy = template.content.cloneNode(true);
-    /* copy.querySelector */
+    
     copy.querySelector(".produktlsitenavn").textContent = product.Produktnavn_og_model;
     document.querySelector(".grid_produktliste").appendChild(copy);
 }
