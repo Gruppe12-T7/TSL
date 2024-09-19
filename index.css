@@ -107,9 +107,11 @@ h2 a{
   }
 
   article {
-    width: 200px;
-    height: 200px;
+    height: 270px;
+    min-width: 200px;
+    justify-content: center;
     display: grid;
+    padding-top: 30px;
   }
 
  .pinkbox:hover{
@@ -150,7 +152,7 @@ h2 a{
   .container_produktliste{
     cursor: pointer;
     box-shadow:2px 2px 5px 0px;
-    color: rgb(35, 50, 73, 0.5);
+    color: rgba(218, 218, 219, 0.5);
     background-color: white;
     margin-left: 1rem;
     margin-right: 1rem;

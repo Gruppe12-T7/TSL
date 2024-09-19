@@ -41,7 +41,7 @@ section .pn_img {
   background-color: #e782a9;
   font-family: bold;
   width: 60%;
-  padding: 17px;
+  padding: 3rem;
   margin: 10px;
   display: flex;
   flex-direction: column; /* Sørger for, at indholdet bliver stablet lodret */
@@ -55,8 +55,8 @@ section .status {
   color: white;
   font-family: light;
   font-size: 0.8rem;
-  width: 40%;
-  padding: 10px;
+  width: 30%;
+  padding: 15px;
   display: flex;
   justify-content: center; /* Centrering vandret */
   align-items: center; /* Centrering lodret */
@@ -69,6 +69,7 @@ section .status h3 {
 
 section .info p {
   font-family: light;
+  line-height: 30px;
 }
 
 /***** FORM *****/
@@ -98,6 +99,7 @@ section .submit-button {
 
 .submit-button:hover {
   background-color: #e782a9; /* Baggrundsfarve ved hover */
+  
 }
 
 section .pn_img_i_s {
