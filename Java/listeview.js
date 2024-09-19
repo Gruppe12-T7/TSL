@@ -4,11 +4,13 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 
+//fanger den valgte kategori på index.html
 const selectedCategory = urlParams.get("category");
+console.log("cat", selectedCategory);
 
-if(selectedCategory)
+//fetcher data
 fetch(
-    `https://crfdkrynbwvauyrnuvmc.supabase.co/rest/v1/TSL?Taksonomi1=eg.${encodeURIComponent(selectedCategory)}`,
+    `https://crfdkrynbwvauyrnuvmc.supabase.co/rest/v1/TSL?Taksonomi1=eq.${selectedCategory}`,
     {
         method: "GET",
         headers: {
@@ -19,17 +21,19 @@ fetch(
 .then((res)=> res.json())
 .then(showProducts);
 
+//laver et array af de produkter fra den valgte kategori
 function showProducts(products){
     console.log(products);
     products.forEach(showProduct);
 }
 
+//kopierer dem og viser i templaten
 function showProduct(product){
     console.log(product);
     const template = document.querySelector("#produktTemplate");
     const copy = template.content.cloneNode(true);
     /* copy.querySelector */
-    copy.querySelector(".produktlsitenavn").textContent = product.Produktnavn;
+    copy.querySelector(".produktlsitenavn").textContent = product.Produktnavn_og_model;
     document.querySelector(".grid_produktliste").appendChild(copy);
 }
 
