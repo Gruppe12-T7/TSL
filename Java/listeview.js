@@ -6,8 +6,7 @@ const urlParams = new URLSearchParams(window.location.search);
 
 //fanger den valgte kategori på index.html
 const selectedCategory = urlParams.get("category");
-
-// const selectedCategory = "Audio/Photo/Video Equipment"
+console.log("cat", selectedCategory);
 
 //fetcher data
 fetch(
