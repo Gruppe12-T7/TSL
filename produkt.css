@@ -3,3 +3,147 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: bold;
+  src: url(fonts/HelveticaNeueBold.otf);
+}
+
+@font-face {
+  font-family: light;
+  src: url(fonts/HelveticaNeueLight.otf);
+}
+
+.overskrift_produkt {
+  font-family: bold;
+  font-size: 0.8rem;
+  margin: 18px;
+}
+
+section .pn_img img {
+  width: 60%;
+  height: auto; /* Sørger for, at billedets proportioner bevares */
+  margin: 20px;
+}
+
+section .pn_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertikal centrering */
+  align-items: center; /* Horisontal centrering */
+  text-align: center; /* Centrerer teksten horisontalt */
+  font-family: bold;
+  font-size: 1.6rem;
+  padding-top: 30px;
+}
+
+.info {
+  background-color: #e782a9;
+  font-family: bold;
+  width: 60%;
+  padding: 17px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column; /* Sørger for, at indholdet bliver stablet lodret */
+  justify-content: center; /* Vertikal centrering */
+  align-items: center; /* Horisontal centrering */
+  text-align: center;
+}
+
+section .status {
+  background-color: #233249;
+  color: white;
+  font-family: light;
+  font-size: 0.8rem;
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Centrering vandret */
+  align-items: center; /* Centrering lodret */
+  margin: 10px;
+}
+
+section .status h3 {
+  padding: 0;
+}
+
+section .info p {
+  font-family: light;
+}
+
+/***** FORM *****/
+section .form_produkt {
+  background-color: #cbcbcb;
+  padding: 20px;
+  font-family: light;
+  margin: 30px;
+}
+
+section .form_produkt h2 {
+  font-family: bold;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+section .submit-button {
+  background-color: #233249; /* Baggrundsfarve */
+  color: white; /* Tekstfarve */
+  border: none; /* Ingen kantlinje */
+  border-radius: 5px; /* Afrundede hjørner */
+  padding: 5px 10px; /* Indvendig afstand (top/bund, venstre/højre) */
+  font-size: 16px; /* Skriftstørrelse */
+  cursor: pointer; /* Ændrer musen til en pegefinger */
+  transition: background-color 0.3s ease; /* Glidende overgang for baggrundsfarve */
+}
+
+.submit-button:hover {
+  background-color: #e782a9; /* Baggrundsfarve ved hover */
+}
+
+section .pn_img_i_s {
+  display: grid;
+  place-items: center;
+}
+
+/***** DESKTOP *****/
+
+@media (min-width: 769px) {
+  .info {
+    width: 60%;
+    height: 50%;
+  }
+
+  .sektion1 {
+    display: grid;
+    gap: 20px; /* Valgfri: tilføjer plads mellem kolonnerne */
+  }
+
+  .pn_img {
+    grid-column: 1; /* Placerer .pn_img i den første kolonne */
+  }
+
+  .info {
+    grid-column: 2; /* Placerer .info i den anden kolonne */
+  }
+
+  .status {
+    grid-column: 2; /* Placerer .status også i den anden kolonne */
+  }
+
+  /*** form *****/
+  .form_produkt {
+    width: 550%;
+  }
+
+  .sektion2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  /* Sørg for at form fylder hele .form_produkt */
+  .form_produkt form {
+    width: 100%;
+  }
+}
