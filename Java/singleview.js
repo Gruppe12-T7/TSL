@@ -11,11 +11,10 @@ fetch("https://crfdkrynbwvauyrnuvmc.supabase.co/rest/v1/TSL", {
 .then(res=>res.json())
 .then(showData)
 
-function showData(items){
-  console.log(items);
-  //document.querySelector("")
-  //document.querySelector("")
-  //document.querySelector("")
+function showData(item){
+  console.log(item);
+  document.querySelector(".sektion1 h1").textContent=item.Mærke;
+  document.querySelector(".sektion1 h2").textContent=item.Produktnavn_og_model;
 }
 
 /*
