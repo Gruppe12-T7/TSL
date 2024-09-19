@@ -99,7 +99,7 @@ h2{
 /****** media queries til computer format ********/
 @media (min-width: 700px) {
   .grid_produktliste{
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+    grid-template-columns: 1fr 1fr 1fr; /* Ændrer gridet til web-format*/
+  } 
 
 }
