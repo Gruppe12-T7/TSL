@@ -49,6 +49,10 @@ article{
 
 /****** media queries til computer format ********/
 @media (min-width: 700px) {
+h2{
+  font-family: bold;
+}
+
   .kategori_container{
     background-color: rgb(234, 234, 234, 0.1);
     display: flex;
