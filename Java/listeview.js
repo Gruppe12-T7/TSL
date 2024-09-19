@@ -34,6 +34,7 @@ function showProduct(product){
     const copy = template.content.cloneNode(true);
     /* copy.querySelector */
     copy.querySelector(".produktlsitenavn").textContent = product.Produktnavn_og_model;
+    copy.querySelector("a").href = "produkt.html?id="+product.Asset_ID;
     document.querySelector(".grid_produktliste").appendChild(copy);
 }
 
