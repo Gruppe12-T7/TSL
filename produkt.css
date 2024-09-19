@@ -118,7 +118,7 @@ section .pn_img_i_s {
 .breadcrumbs a{
   text-decoration: none;
   color: black;
-  font-family: regular;
+  font-family: light;
   font-weight: 600;
 }
 
