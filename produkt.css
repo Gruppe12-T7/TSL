@@ -105,6 +105,35 @@ section .pn_img_i_s {
   place-items: center;
 }
 
+.breadcrumbs{
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 15px;
+  justify-content: left;
+  padding-bottom: 2rem;
+  margin: auto;
+}
+
+.breadcrumbs a{
+  text-decoration: none;
+  color: black;
+  font-family: light;
+  font-weight: 600;
+}
+
+.breadcrumbs :hover{
+  color: rgb(71, 70, 70);
+}
+
+
+.breadcrumbs li + li ::before{
+  content: ">";
+  margin-right: 10px;
+  color: black;
+
+}
+
 /***** DESKTOP *****/
 
 @media (min-width: 769px) {
